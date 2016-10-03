@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+
+{% block title %}HPE DCN Work Shop{% endblock %}
+
+{% block header %}<link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet">{% endblock %}
+
+{% block content %}
+
+<div class="row">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron home-jumbo">
+      <div class="container">
+        <img src="{{ url_for('static', filename='assets/roadshow1.JPG') }}" width="1020" />
+        <p>Don't miss this opportunity to attend a HPE Distributed Cloud Networking Work Shop</p>
+        <a href="http://www8.hp.com/us/en/products/network-management/product-detail.html?oid=7268885">More information on DCN</a>
+
+        <p><a class="btn btn-primary btn-lg" href="{{ url_for('user_app.register') }}" role="button">Register</a></p>
+      </div>
+    </div>
+</div>
+{% endblock %}

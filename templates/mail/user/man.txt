@@ -1,0 +1,11 @@
+{% extends "mail/base.txt" %}
+
+{% block body %}
+Hi {{ user.first_name }} {{ user.last_name}} with {{ user.company }} has registered for the event
+Phone: {{ user.phone }}
+Question: {{ user.question }}
+_____________________________________________________________________________________________________
+
+The HPE DCN Work Shop at:
+{{ user.event }}
+{% endblock %}

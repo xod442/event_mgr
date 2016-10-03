@@ -1,0 +1,11 @@
+{% extends "mail/base.html" %}
+
+{% block body %}
+<p>Please note: {{ user.first_name }} {{ user.last_name}} with {{ user.company }} has registered for the event</p>
+<p> Phone: {{ user.phone }}</p>
+<p> Question: {{ user.question }}
+<hr>
+
+<p>The HPE DCN Work Shop at:</p>
+{{ user.event }}
+{% endblock %}

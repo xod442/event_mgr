@@ -1,0 +1,9 @@
+{% extends "mail/base.html" %}
+
+{% block body %}
+<p>Hello {{ user.first_name }} ,thanks for registering for the HPE DCN Work Shop!</p>
+<hr>
+<p>The HPE DCN Work Shop will take place at:</p>
+<p> Please do not respond to the email, thank you</p>
+{{ user.event }}
+{% endblock %}

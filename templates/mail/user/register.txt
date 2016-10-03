@@ -1,0 +1,8 @@
+{% extends "mail/base.txt" %}
+
+{% block body %}
+Hi {{ user.first_name }} and thanks for registering for the HPE DCN Work Shop!
+
+Please plan on attending the HPE DCN Work Shop at:
+{{ user.event }}
+{% endblock %}
